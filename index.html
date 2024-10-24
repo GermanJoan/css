@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definiciones de CSS</title>
+    <style>
+      
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+    
+        header {
+            background-color: #f9c2c2;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #f9a1a1;
+        }
+
+        header h1 {
+            color: #ff6161;
+            margin: 0;
+        }
+
+        header p {
+            color: #ff9797;
+            margin-top: 5px;
+            font-size: 1.2em;
+        }
+
+       
+        main {
+            padding: 20px;
+            background-color: #fff4e1;
+        }
+
+        main section {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #f8e5c2;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        main h2 {
+            color: #ff9b42;
+            border-bottom: 2px solid #ffd8a6;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        main p, main ul {
+            color: #333;
+            font-size: 1em;
+        }
+
+        main ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        main ul li {
+            margin-bottom: 8px;
+        }
+
+    
+        footer {
+            background-color: #c2e9f9;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-top: 2px solid #a1d3f9;
+        }
+
+        footer p {
+            color: #007acc;
+            margin: 0;
+        }
+
+      
+        @media (max-width: 600px) {
+            main {
+                padding: 10px;
+            }
+
+            main section {
+                padding: 10px;
+            }
+
+            header, footer {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Definiciones de CSS</h1>
+       
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Definición de CSS</h2>
+            <p>CSS (Cascading Style Sheets) es un lenguaje utilizado para describir la presentación de un documento HTML. Define cómo los elementos deben ser visualizados en una página web, permitiendo la personalización de aspectos como colores, fuentes, márgenes, y la disposición en general.</p>
+        </section>
+
+        <section>
+            <h2>2. Funcionamiento Básico de CSS</h2>
+            <p>CSS funciona aplicando estilos a los elementos de un documento HTML a través de "reglas". Estas reglas definen cómo los elementos deben aparecer visualmente, afectando propiedades como el tamaño de la fuente, los colores, el espaciado, y más. Las reglas CSS pueden aplicarse directamente en el HTML, mediante un archivo CSS externo o en líneas dentro del mismo documento HTML.</p>
+        </section>
+
+        <section>
+            <h2>3. Incluir CSS en un archivo HTML</h2>
+            <p>CSS se puede incluir en HTML de tres formas:</p>
+            <ul>
+                <li><strong>CSS externo:</strong> Enlazando un archivo CSS separado usando la etiqueta <code>&lt;link&gt;</code> en la sección <code>&lt;head&gt;</code> del HTML.</li>
+                <li><strong>CSS interno:</strong> Definiendo estilos dentro de una etiqueta <code>&lt;style&gt;</code> dentro de la sección <code>&lt;head&gt;</code>.</li>
+                <li><strong>CSS en línea:</strong> Aplicando estilos directamente en los elementos HTML con el atributo <code>style</code>.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Definición de una regla CSS</h2>
+            <p>Una regla CSS es una instrucción que define cómo se debe estilizar uno o varios elementos de una página web. Una regla tiene dos componentes principales: un <strong>selector</strong> que indica a qué elementos se aplicará, y un <strong>bloque de declaración</strong> que contiene una o más declaraciones de estilo.</p>
+        </section>
+
+        <section>
+            <h2>5. Elementos de una regla CSS</h2>
+            <ul>
+                <li><strong>Regla:</strong> Es la combinación de un selector y un bloque de declaración, que define qué elementos de HTML serán estilizados y cómo.</li>
+                <li><strong>Selector:</strong> Indica el elemento HTML al que se aplicará la regla.</li>
+                <li><strong>Bloque de declaración:</strong> Conjunto de una o más declaraciones que definen el estilo. Se encierra entre llaves <code>{ }</code>.</li>
+                <li><strong>Propiedad:</strong> El atributo del elemento HTML que se quiere estilizar.</li>
+                <li><strong>Valor:</strong> Especifica el estilo que se aplicará a la propiedad.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Medios CSS</h2>
+            <p>Los <strong>media queries</strong> permiten aplicar estilos CSS específicos dependiendo de las características del dispositivo, como el ancho de la pantalla. Esto es útil para crear sitios web adaptables o "responsivos".</p>
+        </section>
+
+        <section>
+            <h2>7. Comentarios CSS</h2>
+            <p>Los comentarios en CSS se utilizan para explicar partes del código y no son procesados por el navegador. Se escriben entre <code>/*</code> y <code>*/</code>.</p>
+        </section>
+
+        <section>
+            <h2>8. Sintaxis de la definición de las propiedades CSS</h2>
+            <p>La sintaxis básica de una propiedad CSS es:</p>
+            <pre><code>propiedad: valor;</code></pre>
+            <p>Cada propiedad se separa del valor mediante dos puntos <code>:</code> y la declaración termina con un punto y coma <code>;</code>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Diseñado por [GERMAN HENRIQUEZ] | Curso de CSS y HTML5</p>
+    </footer>
+</body>
+</html>
